@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Instrucciones
 
-## Getting Started
+### Paso 1
 
-First, run the development server:
+    Ejecutar con npm run dev
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Paso 2
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    En la ruta inicial dar click en el botón de login para ser dirigido a la sección de login.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Paso 3
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+    Ingresar las crendeciales: user@gmail.com y 12345 como correo y contraseña respectivamente.
 
-## Learn More
+## Paso 4
 
-To learn more about Next.js, take a look at the following resources:
+    Complete los campos del formulario para crear una nueva tarea.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Paso 5
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    Para editar una tarea hacer clic en el botón de opciones → Edit
 
-## Deploy on Vercel
+## Paso 6
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    Para eliminar una tarea hacer clic en el botón de opciones → Delete
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Paso 7
+
+    Dar clic en el botón naranja para enviar el formulario.
+
+## Paso Opcional
+
+    Dar F5 para visualizar las tareas originales.
