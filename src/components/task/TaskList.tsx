@@ -82,6 +82,7 @@ export const TaskList: React.FC = () => {
   const deleteTask = (id: string) => {
     setTasks(tasks.filter((e) => e.id !== id));
     alert("Task deleted");
+    cleanCurrentTask();
   };
 
   const createTask = (e: {
