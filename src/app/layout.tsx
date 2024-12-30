@@ -1,30 +1,29 @@
-import type { Metadata } from "next";
+"use client";
+
 import { Work_Sans } from "next/font/google";
 import "./globals.css";
-import StoreProvider from "./StoreProvider";
+import { useEffect } from "react";
 
 const workSans = Work_Sans({
   variable: "--font-work-sans",
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "SeekyApp",
-  description: "My front-end challenge in React and NextJS",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // ↓ there is a mismatch in Google Chrome, here is the solution
+  useEffect(() => {
+    document.documentElement.setAttribute("hc", "delumine-smart dynamic");
+    document.documentElement.setAttribute("looks-dark", "");
+  }, []);
   return (
-    <StoreProvider count={7}>
-      <html lang="en">
-        <body className={`${workSans.variable} font-work-sans antialiased`}>
-          {children}
-        </body>
-      </html>
-    </StoreProvider>
+    <html lang="en">
+      <body className={`${workSans.variable} font-work-sans antialiased`}>
+        {children}
+      </body>
+    </html>
   );
 }
