@@ -55,7 +55,7 @@ export const FormLogin: React.FC = () => {
         login({ email: form.email, password: form.password })
       );
       if (login.fulfilled.match(result)) {
-        alert("te logueaste correctamente");
+        alert("Login succesful");
         router.push("/dashboard");
       } else {
         alert("Login failed");
@@ -71,7 +71,7 @@ export const FormLogin: React.FC = () => {
       className="w-[420px] rounded-[11px] border-[1.2px] border-solid border-primary-200 bg-primary-600 px-8 pb-[50px] pt-[30px]"
       onSubmit={send}
     >
-      <p className="text-center text-[22px]">SeekyTasks</p>
+      <p className="text-center text-[22px]">SeekyApp</p>
       <div className="mb-[50px] mt-12 flex flex-col gap-y-10">
         <div className="flex gap-x-5">
           <div className="pt-2.5">
