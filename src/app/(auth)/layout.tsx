@@ -1,7 +1,7 @@
 import styles from "@/app/(auth)/styles.module.css";
 import UserProvider from "@/lib/features/user/UserProvider";
 
-export const AuthLayout = ({
+const AuthLayout = ({
   children,
 }: Readonly<{
   children: React.ReactNode;
