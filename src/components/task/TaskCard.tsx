@@ -24,7 +24,7 @@ export const TaskCard: React.FC<
     <div
       className={`${
         isFocused ? "border-orange-500" : "border-primary-200"
-      } flex relative w-full border-2 bg-black justify-between px-3 rounded-xl py-2.5`}
+      } flex relative w-full border-2 bg-black flex-col gap-y-2.5 lg:gap-y-0 lg:flex-row justify-between px-3 rounded-xl py-2.5`}
     >
       <div className="flex flex-col gap-y-1.5">
         <p className="text-[22px] font-bold text-gray-300 underline underline-offset-4">
