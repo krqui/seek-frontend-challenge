@@ -116,7 +116,7 @@ export const FormTask = ({
             inputClass="bg-transparent border-t-0 border-x-0 border-b-[1.2px] rounded-none outline-none focus:border-primary-400 py-2 text-[18px] !pl-1"
             className="h-full"
           />
-          <div className="flex gap-x-4">
+          <div className="flex flex-col gap-y-4 lg:flex-row lg:gap-x-4">
             {statusList.map((e) => (
               <MainOption
                 key={e.option}
