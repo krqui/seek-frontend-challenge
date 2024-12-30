@@ -81,6 +81,13 @@ export const FormTask = ({
   const submitForm = (event: FormEvent) => {
     event.preventDefault();
     onSend(form);
+    setTimeout(() => {
+      setForm({
+        title: "",
+        description: "",
+        status: "pending",
+      });
+    }, 800);
   };
 
   return (

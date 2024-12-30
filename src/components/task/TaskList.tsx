@@ -100,6 +100,7 @@ export const TaskList: React.FC = () => {
       },
     ]);
     cleanCurrentTask();
+    alert("Task created");
   };
 
   const updateTask = (e: {
@@ -124,6 +125,7 @@ export const TaskList: React.FC = () => {
     setTasks(updatedTasks);
     setisFormEditing(false);
     cleanCurrentTask();
+    alert("Task updated");
   };
 
   const handleSend = (e: {
